@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Please enter your login"
+AuthUserFile /var/www/clients/client4176/web11325/web/lg-v6/extras/statistics_db/.htpasswd
+Require valid-user
+

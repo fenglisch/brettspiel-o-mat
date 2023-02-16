@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulk export and regex LimeSurvey responses</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="survey-list.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Export and regex LimeSurvey responses</h1>
+
+    <form>
+      <fieldset class="authentification">
+        <legend>Authentifizierung</legend>
+        <label for="username">User name</label>
+        <input id="username" type="text" />
+        <label for="password">Passwort</label>
+        <input id="password" type="password" />
+      </fieldset>
+      <div class="instructions">
+        <h3>
+          *Erklärung zu
+          <code
+            >- ab
+            <span style="border: 1px solid #fff; padding: 5px 10px"
+              >GET ALL</span
+            ></code
+          >
+        </h3>
+        <p>
+          Dieses Feld wird bei jeder Stadt angezeigt, die du angeklickt hast.
+          Wenn du nicht den gesamten Datensatz der Umfrage herunterladen
+          möchtest, sondern nur ab einer bestimmten Stelle, gib hier den
+          vollständigen Namen (ohne Anführungszeichen) des Vereins ein, bis zu
+          dem alle Einträge gelöscht werden sollen (der letzte Verein in der
+          aktuellen <code>xx_initiativen.csv</code>, zu finden unter
+          https://mitwirk-o-mat.de/PATH/TO/MOM/data/initiativen.csv). Alle
+          neueren Einträge sind dann im Export enthalten.
+        </p>
+        <p>
+          Wenn du den gesamten Datensatz der Umfrage herunterladen möchtest,
+          lass <code>[GET ALL]</code> einfach stehen.
+        </p>
+      </div>
+
+      <fieldset class="selection">
+        <legend>Auswahl</legend>
+        <button type="button" id="check-all">Check all</button>
+        <button type="button" id="uncheck-all">Uncheck all</button>
+        <label for="additional-survey-ids">Weitere Umfragen</label>
+        <input id="additional-survey-ids" type="text" placeholder="ID's Komma-getrennt eingeben"/>
+      </fieldset>
+      <p id="error-message"></p>
+      <button id="submit">Submit</button>
+    </form>
+    <div id="download-area"></div>
+  </body>
+</html>

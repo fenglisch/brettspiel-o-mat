@@ -1,0 +1,465 @@
+/*FONT
+ 
+1. Check font of website where Mitwirk-O-Mat will be embedded
+2. Look for font under https://google-webfonts-helper.herokuapp.com/fonts
+	2. a) If font isn't there (because it's proprietary and not open source), look for a very similar one, e. g. https://alternatype.net/
+3. Choose the styles of the font you need: Regular 400, Regular 400 italic, Bold 700 (more when needed)
+4. Choose "Best Support"
+5. Prefix must be ../fonts/
+6. Copy snippet and insert here
+7. Download fonts, extraxt zip file and upload files in folder /fonts
+
+
+/* eb-garamond-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/eb-garamond-v26-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/eb-garamond-v26-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* eb-garamond-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/eb-garamond-v26-latin-italic.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/eb-garamond-v26-latin-italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* eb-garamond-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/eb-garamond-v26-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/eb-garamond-v26-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* eb-garamond-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/eb-garamond-v26-latin-700italic.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/eb-garamond-v26-latin-700italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin-italic.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin-italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v25-latin-500.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v25-latin-500italic.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin-500italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v25-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v25-latin-700italic.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin-700italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* General hint: If you have only one color from the website where Mitwirk-O-Mat will be embedded,
+   go to https://mycolor.space/ or https://coolors.co and look for fitting colors
+! check the contrast between the background colors and the color of the text on it for accessibility (WCAG AA is enough)
+   https://webaim.org/resources/contrastchecker/ */
+
+:root {
+  --body-font: "Montserrat";
+  --heading-font: "EB Garamond";
+  --primary-color: #42818f; /* Color of the card and some buttons. Should be rather dark. Main color of the website fits well. */
+  --link-color: #42818f; /* Usually same as main-color. Must be dark enough to be readable on white background. */
+  --link-color-after-bg-change: #000000; /* If the background of the table cells in the progress table (jumpToQuestionNr) changes depending to the answer, which color shall the link change to?*/
+  --secondary-color: #6eb8bb; /* Color of the start button, the "agree to statistics" and resultsByThesis/Parties buttons. Good contrast to main color. Maybe a green tone? */
+  --success: #7ec266; /* For ranking bar and answer buttons. Ideally dark enough to read white text on it */
+  --warning: #ffb15c;
+  --danger: #e37901;
+  --passive-button-color: #eee; /* Could be grey */
+  --border-radius: 0;
+  --display-made-with-love: none; /* "block" (label shown) or "none" (label hidden)  */
+}
+
+td[style*="background-color: var(--success)"] a,
+td[style*="background-color: var(--warning)"] a,
+td[style*="background-color: var(--danger)"] a {
+  color: var(--link-color-after-bg-change);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .filterButtons > .col:first-child {
+    flex-basis: 100%;
+  }
+}
+
+/* Streifen in der resultsShortTable werden durchs Filtern durcheinander gebracht */
+.mow-row-striped[id^="resultsShortPartyClamp"]:nth-child(2n + 1) {
+  background-color: unset;
+}
+
+/* Bei den Fragen-Tabelle dagegen sind sie ok */
+[id^="resultsByPartyAnswersToQuestion"] .mow-row-striped:nth-child(2n + 1) {
+  background: #eee;
+}
+
+[id^="resultsShortPartyDescription"]::before {
+  background-color: var(--passive-button-color);
+}
+
+.questionPrefix {
+  font-style: italic;
+  text-align: center;
+  background: #6eb8bb;
+  padding: 5px 10px;
+  font-weight: 500;
+  position: relative;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.questionPrefix::after {
+  content: "";
+  position: absolute;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #6eb8bb transparent transparent transparent;
+  bottom: -19px;
+}
+
+.questionPrefix::before {
+  content: "";
+  position: absolute;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+  bottom: -20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .questionPrefix {
+    width: max-content;
+    margin: 0 auto 1rem auto;
+  }
+}
+
+/* Make logos bigger */
+
+@media only screen and (min-width: 768px) {
+  #selfPositionContainer0::before {
+    content: "Deine Antwort:";
+  }
+  #partyPositionContainer0::before {
+    content: "Antwort des Spiels:";
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  [id^="selfPositionContainer"]::before {
+    content: "Deine Antwort:";
+  }
+
+  [id^="partyPositionContainer"]::before {
+    content: "Antwort des Spiels:";
+  }
+}
+
+#detailsGrid {
+  display: inline-grid;
+  grid-template-columns: 1fr 3fr;
+  font-size: 0.8rem;
+}
+
+#detailsGrid span {
+  padding: 5px;
+}
+
+#detailsGrid span:nth-child(-n + 6) {
+  border-bottom: 1px solid #000;
+}
+
+#detailsGrid span:nth-child(2n + 1) {
+  border-right: 1px solid;
+}
+
+/* Bei den Fragen mit den Custom Antworten mehr Platz für die Antwort-Icons lassen und die
+Frage auf die nächste Zeile schieben */
+@media only screen and (max-width: 767px) {
+  #resultsByThesisTable > .col:first-child > .row:nth-child(2) > .col-2,
+  #resultsByThesisTable > .col:first-child > .row:nth-child(4) > .col-2 {
+    flex-basis: 100%;
+    max-width: unset;
+  }
+
+  #resultsByThesisAnswersToQuestion0 .col-2 {
+    flex: 0 0 25%;
+    max-width: unset;
+  }
+
+  #resultsByThesisAnswersToQuestion1 .col-2 {
+    flex: 0 0 35%;
+    max-width: unset;
+  }
+
+  #resultsByThesisQuestion0,
+  #resultsByThesisQuestion1 {
+    margin-left: auto;
+  }
+  #resultsByThesisAnswersToQuestion0 .col-10,
+  #resultsByThesisAnswersToQuestion1 .col-10 {
+    flex: 0 0 65%;
+  }
+}
+
+/* ///////////////////////////////////////////// */
+
+body {
+  font-family: var(--body-font), serif;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font), var(--body-font), sans-serif;
+}
+
+a,
+a:hover {
+  color: var(--link-color);
+}
+
+/* Corners of question card and buttons*/
+.btn,
+.card,
+.rounded {
+  border-radius: var(--border-radius) !important;
+}
+
+#sectionDescription .border-dark {
+  background: var(--primary-color) !important;
+}
+
+#descriptionButtonStart {
+  background-color: var(--secondary-color);
+  color: #000;
+  font-weight: 500;
+}
+
+#madeWithLove {
+  display: var(--display-made-with-love);
+}
+
+.card {
+  background: var(--primary-color) !important;
+}
+
+.card::after,
+#speechbubbleSpike::after {
+  border-color: var(--primary-color) transparent;
+}
+
+@media only screen and (max-width: 760px) {
+  .card::after,
+  #speechbubbleSpike::after {
+    border-color: var(--primary-color) transparent;
+  }
+}
+
+.btn-dark:not(:disabled):not(.disabled).active,
+.btn-dark:not(:disabled):not(.disabled):active,
+.show > .btn-dark.dropdown-toggle {
+  background-color: var(--success);
+}
+
+#statisticsModalButtonYes,
+#statisticsModalButtonYes:focus,
+#statisticsModalButtonYes:active {
+  background-color: var(--success);
+}
+
+#resultsIntro {
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-success,
+.btn-success:hover,
+.btn-success:focus,
+#resultsByThesisTable .btn-success:active,
+#resultsByPartyTable .btn-success:active,
+.btn-success.disabled,
+.btn-success:disabled {
+  background: var(--success);
+}
+
+.bg-success {
+  background: var(--success) !important;
+}
+
+.btn-warning,
+.btn-warning:focus,
+.btn-warning:hover,
+#resultsByThesisTable .btn-warning:active,
+#resultsByPartyTable .btn-warning:active,
+.btn-warning.disabled,
+.btn-warning:disabled {
+  background-color: var(--warning);
+}
+
+.bg-warning {
+  background: var(--warning) !important;
+}
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:focus,
+#resultsByThesisTable .btn-danger:active,
+#resultsByPartyTable .btn-danger:active,
+.btn-danger.disabled,
+.btn-danger:disabled {
+  background-color: var(--danger);
+}
+
+.bg-danger {
+  background: var(--danger) !important;
+}
+
+/*Show more / Show less buttons */
+.Buttons_showPartiesAtEnd_minus,
+.Buttons_showPartiesAtEnd_plus {
+  background: var(--success);
+}
+
+#resultsButtonTheses.btn-primary,
+#resultsButtonParties.btn-primary {
+  background-color: var(--secondary-color);
+}
+
+#resultsButtonTheses.btn-secondary,
+#resultsButtonParties.btn-secondary {
+  background: var(--primary-color);
+}
+
+#resultsButtonTheses.btn-primary,
+#resultsButtonParties.btn-primary {
+  background: var(--secondary-color);
+}
+
+[id$="collapse"]:active,
+.nonexpanded,
+.nonexpanded:hover {
+  background-color: var(--secondary-color) !important;
+  color: #000;
+}
+
+[id$="collapse"].expanded {
+  color: #000;
+  background-color: #eee;
+  border: none;
+}
+
+[id^="resultsByThesisQuestion"][id$="collapse"] {
+  color: #000 !important;
+  background-color: #eee !important;
+  border: none;
+  float: right;
+}
+
+[role="columnheader"] {
+  font-size: 0.8rem;
+}
+
+/* Create a border around the answers to an expanded question in order to seperate it from the next question */
+[id^="resultsByThesisAnswersToQuestion"],
+[id^="resultsByThesisQuestionRow"] {
+  border: 1px solid var(--primary-color) !important;
+}
+
+[class*="mow_addon_textfilter_button"],
+[class*="mow_addon_textfilter_button"]:hover,
+[class*="mow_addon_textfilter_button"].btn-secondary:focus {
+  /* border: 2px solid var(--primary-color) !important; */
+  color: #000 !important;
+}
+
+[class*="mow_addon_textfilter_button"]:active {
+  background: var(--primary-color) !important;
+}
+
+[class*="mow_addon_textfilter_button"].btn-secondary,
+[class*="mow_addon_textfilter_button"].btn-secondary:hover {
+  background: #eeeeee;
+}
+
+[class*="mow_addon_textfilter_button"].btn-primary,
+[class*="mow_addon_textfilter_button"].btn-primary:hover {
+  background: var(--secondary-color);
+}
