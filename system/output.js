@@ -452,7 +452,7 @@ for (i = 0; i <= intParties - 1; i++) {
       if ($this.hasClass("expanded")) {
         $this.html("Antworten verstecken");
       } else {
-        $this.html("Antworten des Spiels anzeigen");
+        $this.html("Antworten anzeigen");
       }
     });
     $(`#resultsByPartyAnswersToQuestion${i}`).css("display", "none");
