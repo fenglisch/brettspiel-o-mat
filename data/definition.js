@@ -51,7 +51,6 @@ const design = ["brettspiele.css"];
 
 const addons = [
   "extras/addon_check_iframe_resize_client.js",
-  "extras/addon_custom_voting_buttons.js",
   "extras/addon_results_textfilter_by_button.js",
   "extras/addon_tooltips.js",
   "extras/addon_show_first_results.js"
